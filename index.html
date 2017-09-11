@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>sampleUI</title>
+     <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+      <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  
+  <style type="text/css">
+      .container{
+          width:960px;
+      }
+      
+    </style>
+  <script>
+          $(document).ready(function() {
+    Materialize.updateTextFields();
+  });
+         $('#postarea').val('New Text');
+  $('#postarea').trigger('autoresize');
+    </script>
+</head>
+<body>
+    <div class="container ">
+       <div class="cyan row darken-4">
+            <div class="col s12 white-text">
+                <h1>platy6</h1>
+            </div>
+        </div>
+        <div class="row card-panel">
+            <div class="col s12">
+                
+                    <div class="card-content row">
+                        <span class="card-title">
+                            notes
+                        </span>
+                        <form action="">
+                            <div class="input-field">
+                                <textarea id="postarea" class="materialize-textarea"></textarea>
+                                <label for="postarea">textInput</label>
+                            </div>
+                        
+                            <div class="col s10"></div>
+                            <div class="col s2">
+                                <a class="waves-effect waves-light btn">submit</a>
+                            </div>
+                        </form>
+                    </div>
+                
+            </div>
+        </div>
+        
+        <!-- repeat -->
+        <div class="row card-panel">
+           <div class="row">
+            <div class="col s12 postcontents">
+                post repeat
+            </div>
+            </div>
+            <div class="row cyan lighten-5">
+                <div class="col s8"></div>
+                <div class="col s4">
+                    <span class="grey-text text-darken-2">post by <a href="">platoronical</a></span>
+                    <span class="grey-text text-darken-2">　　20170903 19:00:53</span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
